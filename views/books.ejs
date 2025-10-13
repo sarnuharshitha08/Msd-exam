@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All books</title>
+</head>
+<body>
+    <a href="http://localhost:3000/books/new">create new book</a>
+    <%for(book of books){%>
+        <div style="border:2px solid black;width:300px">
+        <h3>title:<%=book.title%></h3>
+          <p>author:<%=book.author%></p>
+          <p>price:<%=book.price%></p>
+    <%}%>
+    </div>
+</body>
+</html>
